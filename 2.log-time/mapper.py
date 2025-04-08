@@ -13,3 +13,10 @@ for line in sys.stdin:
     if match:
         hour = match.group(1)
         print(f'{hour}\t1')
+
+
+# hadoop jar ~/hadoop-3.3.6/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar\
+#  -input /input/access.log \
+#  -output /output/log-time \
+#  -mapper 'python3 /Users/chojungseok/damf2/hadoop/2.log-time/mapper.py' \
+#  -reducer 'python3 /Users/chojungseok/damf2/hadoop/2.log-time/reducer.py'
