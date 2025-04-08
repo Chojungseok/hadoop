@@ -28,7 +28,7 @@
 
 
 9. `chmod <권한> <file>` : file에 권한을 부여하는 방법  
-![권한](../../Desktop/code/vkxuqbatopk21.png)  
+![권한](../vkxuqbatopk21.png)  
 
 
 
