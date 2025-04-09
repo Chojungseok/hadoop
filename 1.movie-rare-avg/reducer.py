@@ -28,3 +28,10 @@ for line in sys.stdin:
 currunt_avg = currunt_sum / currunt_count
 print(f'{currunt_sum}\t{currunt_avg}')
 
+
+
+# hadoop jar ~/hadoop-3.3.6/share/hadoop/tools/lib/hadoop-streaming-3.3.6.jar\
+#  -input /input/ratings.csv \
+#  -output /output/movie-rate-avg \
+#  -mapper 'python3 ~/damf2/hadoop/1.movie-rate-avg/mapper.py' \
+#  -reducer 'python3 ~/damf2/hadoop/1.movie-rate-avg/reducer.py'
